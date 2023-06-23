@@ -15,9 +15,8 @@ on:
       #  somesecret:
        #     required: false
 jobs:
-  
-deploy:
-    outpus:
+  deploy:
+    outputs:
      outcome:${{ steps.set-result.outputs.step-result }}
    runs-on: ubuntu-latest
    steps:
